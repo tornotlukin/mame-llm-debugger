@@ -98,8 +98,8 @@ the order you start things in does not matter.
 | MAME | Status |
 |------|--------|
 | 0.289 | tested |
-| 0.288 | tested |
-| 0.286 | tested |
+
+Older releases are untested. Newer releases will be added here as they are verified.
 
 `debugremote.cpp` calls MAME internals (`debugger_console`, `debug_disasm_buffer`,
 `device_state_entry`) that do occasionally change between releases. If a new release fails
