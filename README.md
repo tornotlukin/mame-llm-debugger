@@ -65,6 +65,16 @@ mame <game> -debug -debugger remote -debugger_port 12345
 
 `launch/start_debugger.bat` is a Windows convenience wrapper — edit the variables at the top.
 
+**Play first, attach later.** With `-debug`, MAME starts the machine stopped, waiting for the debugger.
+To boot straight into the game with the port still open, give it a one-line script that contains just `go`:
+
+```
+mame <game> -debug -debugger remote -debugger_port 12345 -debugscript go.txt
+```
+
+The game runs normally, and your client can connect at any point to halt and inspect it. The game window stays responsive
+while it's halted, so you can still close it.
+
 **2. Point your MCP client at the bridge.** Copy `.mcp.json.example` to `.mcp.json` in your
 project and set the path:
 

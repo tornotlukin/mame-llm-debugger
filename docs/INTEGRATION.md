@@ -17,8 +17,8 @@ Kept in MAME's idiomatic debugger-module location (next to `debuggdbstub.cpp` /
 
 | File | ~Lines | Purpose |
 |------|--------|---------|
-| `src/osd/modules/debugger/debugremote.cpp` | 816 | The `remote` debugger module: TCP server + JSON-line protocol. Self-declares `MODULE_DEFINITION(DEBUG_REMOTE, osd::debug_remote)`. |
-| `src/osd/modules/debugger/debugremote_tcp.h` | 585 | TCP/protocol header used by the module. |
+| `src/osd/modules/debugger/debugremote.cpp` | 826 | The `remote` debugger module: TCP server + JSON-line protocol. Self-declares `MODULE_DEFINITION(DEBUG_REMOTE, osd::debug_remote)`. |
+| `src/osd/modules/debugger/debugremote_tcp.h` | 586 | TCP/protocol header used by the module. |
 
 > These compile **into `mame.exe`**, so they must live in the source tree and be listed in
 > the build (see B1). That is why they are not kept in this repo's `bridge/` folder.
